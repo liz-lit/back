@@ -1,9 +1,9 @@
 <?php
-
+use Classes\Students;
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
-include 'Students.php';
-
+require_once __DIR__. '/vendor/autoload.php';
+//include "./classes/Students.php";
 $db_connect=pg_connect("host=localhost port=5432 dbname=postgres user=postgres");
 
 $students = new Students($db_connect);

@@ -1,4 +1,5 @@
 <?php
+namespace Classes;
 class Students{
     private $db_connect;
     public function __construct($db_connect){
