@@ -1,11 +1,17 @@
 <?php
+
 namespace Classes;
-class Students{
+class Students
+{
     private $db_connect;
-    public function __construct($db_connect){
+
+    public function __construct($db_connect)
+    {
         $this->db_connect = $db_connect;
     }
-    public function getStudents(){
+
+    public function getStudents()
+    {
         $query = 'SELECT * FROM students';
         $result = pg_query($this->db_connect, $query) or die('The request failed: ' . pg_last_error());
         $arr = array();
@@ -14,8 +20,10 @@ class Students{
         }
         return $arr;
     }
-    public function insertStudents(){
-        $result = pg_insert($this->db_connect, 'students', $_POST);
+
+    public function insertStudents()
+    {
+        $result=pg_query($this->db_connect, "INSERT INTO students (Name, Login) VALUES ('$_POST[Name]', '$_POST[Login]')");
         return $result;
     }
 }
