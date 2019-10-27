@@ -1,6 +1,7 @@
 <?php
 
-namespace Classes;
+namespace Src\Lizlit\Controllers;
+
 class Students
 {
     private $db_connect;

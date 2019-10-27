@@ -1,9 +1,10 @@
 <?php
 
-use Classes\Students;
+use Src\Lizlit\Controllers\Students;
 
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");
+//require_once __DIR__ . '/config.php';
 require_once __DIR__ . '/vendor/autoload.php';
 
 $rest_json = file_get_contents("php://input");
