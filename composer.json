@@ -5,7 +5,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Controllers\\": "src/Lizlit/Controllers"
+      "Lizlit\\": "src/Lizlit"
     }
   }
 }
