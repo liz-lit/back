@@ -1,6 +1,6 @@
 <?php
 
-use Src\Lizlit\Controllers\Students;
+use Lizlit\Controllers\Students;
 
 header("Access-Control-Allow-Origin: *");
 header("Content-Type: application/json");

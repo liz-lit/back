@@ -1,6 +1,6 @@
 <?php
 
-namespace Src\Lizlit\Controllers;
+namespace Lizlit\Controllers;
 
 class Students
 {
